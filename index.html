@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1" id="viewport" name="viewport">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e27779ad32.js" crossorigin="anonymous"></script>
+    <title>Supreme</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            <img src="assets/supremelogo.png" alt="Supreme Logo">
+        </h1>
+
+        <div id="clockbox">
+            <script type="text/javascript">
+                function GetClock(){
+                    var d = new Date();
+                    var nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getFullYear();
+                    var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds(), ap;
+
+                    if (nhour == 0) { ap = " AM"; nhour = 12; }
+                    else if (nhour < 12) { ap = " AM"; }
+                    else if (nhour == 12) { ap = " PM"; }
+                    else if (nhour > 12) { ap = " PM"; nhour -= 12; }
+
+                    if (nmin <= 9) nmin = "0" + nmin;
+                    if (nsec <= 9) nsec = "0" + nsec;
+
+                    var clocktext = (nmonth + 1) + "/" + ndate + "/" + nyear + " " + nhour + ":" + nmin + " pm" + "  NYC";
+                    document.getElementById('clockbox').innerHTML = clocktext;
+                }
+
+                GetClock();
+                setInterval(GetClock, 1000);
+            </script>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">news</a></li>
+            <li><a href="#">fall/winter 2022 preview</a></li>
+            <li><a href="#">fall/winter 2022 lookbook</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">random</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">stores</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">mailinglist</a></li>
+        </ul>
+    </nav>
+
+    <div class="social">
+        <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://weibo.com"><i class="fa-brands fa-weibo"></i></a>
+        <a href="https://itunes.apple.com"><i class="fa-brands fa-app-store"></i></a>
+    </div>
+
+</body>
+</html>

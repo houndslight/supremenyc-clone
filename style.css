@@ -1,0 +1,94 @@
+@font-face {
+    font-family: nos;
+    src: url(assets/font/nimbus-mono.regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Nimbus Mono', monospace;
+    color: white;
+    transition: 1.5s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1.logo img {
+    width: 144px;
+    height: 43.5px;
+    margin-bottom: 20px;
+}
+
+#clockbox {
+    color: white;
+    font-size: 14px;
+    letter-spacing: -1.6px;
+    margin-bottom: 20px;
+}
+
+nav {
+    width: auto;
+    margin-top: 20px;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    font-family: nos;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+nav a:hover {
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 3px;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.social a {
+    color: grey;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: white;
+}
